@@ -1,0 +1,40 @@
+{
+  "name": "lbapp",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "nodemon .",
+    "posttest": "npm run lint"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.433.0",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "express-jwt": "^5.3.1",
+    "helmet": "^3.10.0",
+    "jwks-rsa": "^1.6.0",
+    "jwt-decode": "^2.2.0",
+    "loopback": "^3.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-connector-postgresql": "^3.8.1",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "lbapp"
+}

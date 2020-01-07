@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: udafinals3
+  AWS_ID: _ID_
+  AWS_SECRET: _SECRET_
+  AWS_REGION: eu-west-3
+  POSTGRESS: udacityfinaldb
+  POSTGRESS_HOST: udafinaldb.cgbb2hecuxfb.eu-west-3.rds.amazonaws.com
+  POSTGRESS_URL: postgres://udacityfinaldb:udacityfinaldb@udafinaldb.cgbb2hecuxfb.eu-west-3.rds.amazonaws.com:5432/udacityfinaldb
+metadata:
+  name: env-config
+  

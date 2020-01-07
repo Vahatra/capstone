@@ -1,0 +1,10 @@
+version: "3"
+services:
+  backend:
+    build:
+      context: ../../backend
+    image: vahatra/backend
+  frontend:
+    build:
+      context: ../../frontend  
+    image: vahatra/frontend

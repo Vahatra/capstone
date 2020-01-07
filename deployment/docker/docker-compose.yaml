@@ -1,0 +1,14 @@
+version: "3"
+services:
+  backend:
+    image: vahatra/backend
+    environment:
+      POSTGRESS: $POSTGRESS
+      POSTGRESS_HOST: $POSTGRESS_HOST 
+      AWS_REGION: $AWS_REGION 
+      AWS_PROFILE: $AWS_PROFILE 
+      AWS_BUCKET: $AWS_BUCKET
+  frontend:
+    image: vahatra/frontend
+    ports:
+      - "3000:80"

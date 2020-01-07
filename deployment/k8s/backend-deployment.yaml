@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    service: backend
+  name: backend
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        service: backend
+    spec:
+      containers:
+      - image: vahatra/backend
+        name: backend
+        imagePullPolicy: Always  
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "1024Mi"
+            cpu: "500m"      
+        env:
+        - name: POSTGRESS
+          valueFrom:
+            configMapKeyRef:
+              name: env-config
+              key: POSTGRESS
+      restartPolicy: Always
+
+

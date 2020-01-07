@@ -1,0 +1,12 @@
+{
+  "udacityfinaldb": {
+    "host": "__host__",
+    "port": 5432,
+    "url": "__URL__",
+    "database": "__db__",
+    "password": "__db__",
+    "name": "__db__",
+    "user": "__db__",
+    "connector": "__db__"
+  }
+}
